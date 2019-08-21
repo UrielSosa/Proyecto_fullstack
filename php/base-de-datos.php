@@ -47,7 +47,7 @@
       <!-- Call to action -->
       <ul class="list-unstyled list-inline text-center py-2">
         <li class="list-inline-item"><h5 class="mb-1">Iniciar sesión</h5></li>
-        <li class="list-inline-item"><a href="#!" class="btn btn-danger btn-rounded">Iniciar sesión</a></li>
+        <li class="list-inline-item"><a href="login.php" class="btn btn-danger btn-rounded">Iniciar sesión</a></li>
         <hr>
         <li class="list-inline-item"><h5 class="mb-1">Registrate</h5></li>
         <li class="list-inline-item"><a href="#!" class="btn btn-danger btn-rounded">Registrarse</a></li>
