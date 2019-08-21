@@ -1,0 +1,66 @@
+{
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.logo{
+	position: absolute;
+	margin-top: 80px;
+	margin-left: -240px;
+	width: 200px;
+	position: fixed;
+}
+
+h1{
+	position: relative;
+	left: 100px;
+}
+
+.position{
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.fijo{
+	position: fixed;
+}
+
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+/*--------COLORES---------*/
+.bg_negro{
+	background-color: rgba(0,153,153);
+}	
+
+.bg_verde{
+	background-color: #26c6a3;
+}
+
+.azul{
+	color: #2c3e50;
+}
+
+/*----------PADDING------*/
+
+.p-7{
+	padding: 80px;
+}
+
+/*---- FONT STYLE --------*/
+.font{   
+    font-family: 'Asap', sans-serif;
+
+}
+
+.size{
+	font-size: 4em;
+}
+
+.font-lato{
+	font-family: 'Lato', sans-serif;
+}
+
+/*------OTROS-------*/
