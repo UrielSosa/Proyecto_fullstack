@@ -19,9 +19,10 @@ h1{
 	z-index: 1;
 }
 
-nav a:hover{
-	background-color: #126363;
+li a:hover{
+	/* background-color: #126363; */
 	text-decoration: underline;
+	font-size: 110%;
 }
 
 /*--------COLORES---------*/
