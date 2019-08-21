@@ -1,14 +1,10 @@
-{
+#fondo{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
+*{
 	box-sizing: border-box;
 	margin: 0 auto;
-}
-
-.logo{
-	position: absolute;
-	margin-top: 80px;
-	margin-left: -240px;
-	width: 200px;
-	position: fixed;
 }
 
 h1{
@@ -16,24 +12,22 @@ h1{
 	left: 100px;
 }
 
-.position{
-	position: relative;
-	margin-bottom: 5px;
-}
-
 .fijo{
 	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
 }
 
-a:hover{
-	color: red;
+nav a:hover{
+	background-color: #126363;
 	text-decoration: underline;
 }
 
 /*--------COLORES---------*/
 .bg_negro{
 	background-color: rgba(0,153,153);
-}	
+}
 
 .bg_verde{
 	background-color: #26c6a3;
@@ -50,7 +44,7 @@ a:hover{
 }
 
 /*---- FONT STYLE --------*/
-.font{   
+.font{
     font-family: 'Asap', sans-serif;
 
 }
@@ -63,4 +57,13 @@ a:hover{
 	font-family: 'Lato', sans-serif;
 }
 
+/* -------POSICIONES--------- */
+.position{
+	position: relative;
+	top: 60px;
+}
+
 /*------OTROS-------*/
+.m10{
+  margin-top: 50px;
+}
