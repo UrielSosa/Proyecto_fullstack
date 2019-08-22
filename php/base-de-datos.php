@@ -1,4 +1,5 @@
 <?php
+//Base de datos//
   $autos = [
             0=>["acti"=>"active",
                 "imagen"=>"Hennessey-venom-gt-spyder.jpg",
@@ -41,46 +42,26 @@
                 "descripcion"=>"Lamborghini Veneno",
                 "precio"=>"US$ 4.500.000"],
           ];
+//Footer de la pagina//
   function footer(){
-    echo '
+    ?>
     <footer class="page-footer font-small stylish-color-dark pt-4">
       <!-- Call to action -->
       <ul class="list-unstyled list-inline text-center py-2">
         <li class="list-inline-item"><h5 class="mb-1">Iniciar sesión</h5></li>
-        <li class="list-inline-item"><a href="php/login.php" class="btn btn-danger btn-rounded">Iniciar sesión</a></li>
+        <li class="list-inline-item"><a href="login.php" class="btn btn-danger btn-rounded">Iniciar sesión</a></li>
         <hr>
         <li class="list-inline-item"><h5 class="mb-1">Registrate</h5></li>
-        <li class="list-inline-item"><a href="#!" class="btn btn-danger btn-rounded">Registrarse</a></li>
-      </ul>
-      <hr>
+        <li class="list-inline-item"><a href="register.php" class="btn btn-danger btn-rounded"><i class="fas fa-file-export">  Registrate ahora</i></a></li>      </ul>
+        <hr>
       <!-- Social buttons -->
       <ul class="list-unstyled list-inline text-center d-flex ">
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-fb mx-1"><i class="fab fa-facebook-f"></i></a></li><i class="fab fa-twitter"> </i></a></li>
+          <li class="list-inline-item"><a href="#" class="btn-floating btn-fb mx-1"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="btn-floating btn-fb mx-1"><i class="fab fa-twitter"></i></a></li>
           <li class="list-inline-item"><a href="#" class="btn-floating btn-gplus mx-1"><i class="fab fa-google-plus-g"></i></a></li>
           <li class="list-inline-item"><a href="#" class="btn-floating btn-li mx-1"><i class="fab fa-linkedin-in"></i></a></li>
           <li class="list-inline-item"><a href="#" class="btn-floating btn-dribbble mx-1"><i class="fab fa-dribbble"></i></a></li></ul>
-    </footer>';
-  }
-  function popup(){
-    echo '
-      <div class="popUpWindow NewSubscriptionPopUpWindow" style="margin-top: 10%; margin-left: 10%;">
-        <a href="javascript:void(0);" class="popUpClose NewSubscriptionPopUpClose">&nbsp;</a>
-        <div class="NewSubscriptionPopUpContent">
-          <div class="subscriptionTitle">No dejes pasar promociones como esta</div>
-          <div class="subscriptionOffer"><span><img src="https://d2rp9bqx0m7ihv.cloudfront.net/imgs/1/subscriptionPercent.png" class="loaded" data-was-processed="true"></span>
-          <p>Ofertas increíbles<br><b>Descuentos hasta un 70%</b></p>
-        </div>
-        <div class="subscriptionEmailInfo">Deja tu email y mantendremos a tu mascota al día<br>de todo lo que le pueda interesar</div>
-          <div class="subscriptionForm">
-          <form id="formSubscription1" method="post" onsubmit="return addSubscriptor(this,&quot;popup&quot;);">
-            <input type="text" name="email" placeholder="ejemplo@email.com" required="">
-            <input type="button" class="accesShopButton" name="subbtn" value="Enviar" onclick="$(&quot;#formSubscription1&quot;).submit();">	<span id="conditionsSubs">
-            <div><input id="conditions" type="checkbox" name="conditions" required=""><label>He leído y acepto la <a href="https://www.miscota.es/corp/politica-de-privacidad" rel="nofollow" target="_blank"> política de privacidad </a></label></div>
-            <div><input id="newsletter" type="checkbox" name="newsletter"><label>Quiero recibir promociones y comunicaciones comerciales de Miscota</label></div></span>
-          </form>
-        </div>
-          <a href="javascript:void(0);" onclick="NewSubscriptionPopUp.getInstance().close();" class="subscriptionUser">Ya soy usuario de Miscota</a>
-        </div>
-    </div>';
+    </footer>
+    <?php
   }
  ?>

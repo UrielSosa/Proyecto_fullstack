@@ -1,12 +1,12 @@
-#fondo{
-  background-color: rgba(255, 255, 255, 0.2);
-  color: black;
-}
 *{
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
+#fondo{
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+}
 h1{
 	position: relative;
 	left: 100px;
