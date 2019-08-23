@@ -17,6 +17,7 @@ h1{
 	top: 0px;
 	left: 0px;
 	z-index: 1;
+	display: block;
 }
 
 li a:hover{
@@ -68,3 +69,4 @@ li a:hover{
 .m10{
   margin-top: 50px;
 }
+/* login */

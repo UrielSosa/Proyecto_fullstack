@@ -40,7 +40,7 @@
           <div class="carousel-inner">
             <?php foreach ($autos as $clave => $valor) :?>
               <div class="carousel-item <?=$valor["acti"] ?>">
-                <img src="img/<?=$valor["imagen"]?>" class="d-block w-100" alt="...">
+                <img src="img/carousel/<?=$valor["imagen"]?>" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block" id="fondo">
                   <h5><?=$valor["descripcion"]?></h5>
                   <p><?=$valor["precio"] ?></p>
