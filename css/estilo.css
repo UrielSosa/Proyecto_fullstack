@@ -2,69 +2,18 @@
 	box-sizing: border-box;
 	margin: 0 auto;
 }
-
-#fondo{
-  background-color: rgba(255, 255, 255, 0.2);
-  color: black;
+.u_logo{
+	width: 10%;
 }
-h1{
-	position: relative;
-	left: 100px;
+.u_logo img{
+	width: 100%;
 }
-
-.fijo{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1;
+.u_bg-azul{
+	background-color: rgba(63, 202, 189, 1);
 }
-
-li a:hover{
-	/* background-color: #126363; */
+.nav-link{
+	color: white;
+}
+.nav-link: hover{
 	text-decoration: underline;
-	font-size: 110%;
-}
-
-/*--------COLORES---------*/
-.bg_negro{
-	background-color: rgba(0,153,153);
-}
-
-.bg_verde{
-	background-color: #26c6a3;
-}
-
-.azul{
-	color: #2c3e50;
-}
-
-/*----------PADDING------*/
-
-.p-7{
-	padding: 80px;
-}
-
-/*---- FONT STYLE --------*/
-.font{
-    font-family: 'Asap', sans-serif;
-
-}
-
-.size{
-	font-size: 4em;
-}
-
-.font-lato{
-	font-family: 'Lato', sans-serif;
-}
-
-/* -------POSICIONES--------- */
-.position{
-	position: relative;
-	top: 60px;
-}
-
-/*------OTROS-------*/
-.m10{
-  margin-top: 50px;
 }
