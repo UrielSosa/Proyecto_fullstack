@@ -45,23 +45,73 @@
 //Footer de la pagina//
   function footer(){
     ?>
-    <footer class="page-footer font-small stylish-color-dark pt-4">
-      <!-- Call to action -->
-      <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item"><h5 class="mb-1">Iniciar sesión</h5></li>
-        <li class="list-inline-item"><a href="login.php" class="btn btn-danger btn-rounded">Iniciar sesión</a></li>
-        <hr>
-        <li class="list-inline-item"><h5 class="mb-1">Registrate</h5></li>
-        <li class="list-inline-item"><a href="register.php" class="btn btn-danger btn-rounded"><i class="fas fa-file-export">  Registrate ahora</i></a></li>      </ul>
-        <hr>
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center d-flex ">
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-fb mx-1"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-fb mx-1"><i class="fab fa-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-gplus mx-1"><i class="fab fa-google-plus-g"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-li mx-1"><i class="fab fa-linkedin-in"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="btn-floating btn-dribbble mx-1"><i class="fab fa-dribbble"></i></a></li></ul>
-    </footer>
+<footer class="page-footer font-small stylish-color-dark pt-4">
+  <div class="container bg_azul_os mt-2 pt-2">
+    <div class="row">
+      <div class="col-lg-2 col-md-12 mb-4">
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4">
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/Lamborghini-Veneno.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Image-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/McLaren-P1.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Image-->
+      <div class="col-lg-2 col-md-12 mb-4">
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/Hennessey-venom-gt-spyder.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Image-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+      <!--Image-->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <div class="view overlay z-depth-1-half">
+          <img src="img/carousel/Lykan-Hypersport.jpg" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     <?php
   }
  ?>

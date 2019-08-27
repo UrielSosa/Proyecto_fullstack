@@ -8,12 +8,12 @@
     <!-- LINKS -->
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
   </head>
   <body>
-    <br><h3 id="register">Register (no funcional)</h3><br><br>
-    <div class="container">
+
+    <div class="container mt-5">
       <form class="" action="" method="post">
         <div class="form-row">
           <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-m-12">
@@ -47,7 +47,7 @@
           <div class="form-group ml-5">
             <label for="exampleFormControlSelect1">¿De donde eres?</label>
             <select class="form-control" id="exampleFormControlSelect1">
-              <option>Argentina</option>
+              <option >Argentina</option>
               <option>Brasil</option>
               <option>Colombia</option>
               <option>Chile</option>
@@ -66,6 +66,8 @@
           <input class="form-check-input" type="radio" name="genero" id="G-otro" value="Otro">
           <label class="form-check-label" for="Otro">Otro</label>
         </div>
+        <br><br>
+        <button type="submit" class="ml-5" name="button"> Registrate</button>
       </form>
     </div>
 <?php
