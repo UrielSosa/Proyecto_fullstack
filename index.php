@@ -58,8 +58,7 @@
           </a>
         </div>
       </div>
-    </main>
-
+    <!-- footer -->
     <?php
       footer();
      ?>
