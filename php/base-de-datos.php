@@ -44,6 +44,7 @@
                 "descripcion"=>"Lamborghini Veneno",
                 "precio"=>"US$ 4.500.000"],
           ];
+  
 //Footer de la pagina//
   function footer(){
     ?>
