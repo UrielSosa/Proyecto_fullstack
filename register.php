@@ -8,12 +8,12 @@
     <!-- LINKS -->
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Register</title>
   </head>
   <body>
-
-    <div class="container mt-5">
+<?php nav() ?>
+    <div class="container mt-5" id="Register">
       <form class="" action="" method="post">
         <div class="form-row">
           <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-m-12">
@@ -44,15 +44,20 @@
             <label for="Numero2">Numero de linea</label>
             <input type="text" class="form-control" id="Numero2" placeholder="0800-888-000">
           </div>
-          <div class="form-group ml-5">
-            <label for="exampleFormControlSelect1">¿De donde eres?</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+          <div class="form-group ml-5 col-3">
+            <label for="lugar">¿De donde eres?</label>
+            <select class="form-control">
               <option >Argentina</option>
               <option>Brasil</option>
               <option>Colombia</option>
               <option>Chile</option>
             </select>
           </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group ml-5 col-3">
+          <input type="date" class="form-control" name="cumpleañios" step="1" min="1980-01-01" max="2019-12-31" value="">
+        </div>
         </div>
         <div class="form-check form-check-inline ml-sm-0 ml-lg-5">
           <input class="form-check-input" type="radio" name="genero" id="G-mujer" value="Mujer">
