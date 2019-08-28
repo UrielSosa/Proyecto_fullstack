@@ -76,6 +76,60 @@
           </a>
         </div>
       </div>
+
+      <!-- articulo card -->
+<div class="card-group ">
+      <div class="row">
+          <div class="card col-3 col-3 mt-1 mr-1">
+            <img src="img/card-m/Honda-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card col-3 m-1">
+            <img src="img/card-m/ComforTec-Platina.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card col-3 mt-1 ml-1">
+          <img src="img/card-m/Kawasaki-Aramot-S.A.C.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card col-3 col-3 mt-1 mr-1">
+          <img src="img/card-m/Sengsis.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-  muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card col-3 m-1">
+          <img src="img/card-m/Triax-150.png" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card col-3 mt-1 ml-1">
+        <img src="img/card-m/TRconoweb.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      </div>
+  </div>
     <!-- footer -->
     <?php
       footer();
