@@ -14,16 +14,33 @@
   <body>
     <header class="container-fluid u_bg-azul">
       <div class="navbar">
-        <div class="u_logo ml-0">
+        <div class="u_logo ml-0 mr-0">
           <img src="img/logo1.png" alt="Logo de hotwheels">
         </div>
-        <nav class="nav mr-0">
+        <nav class="nav ml-0">
           <ul class="nav">
             <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link active">Nosotros</a></li>
-            <li class="nav-item"><a href="login.php" class="nav-link active">Login</a></li>
+            <div class="dropdown">
+              <button class="dropbtn"> Autos</button>
+              <div class="dropdown-content">
+              <a href="#"> Lamborghini </a>
+              <a href="#"> McLaren </a>
+              <a href="#"> Bugatti </a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn"> Motos </button>
+              <div class="dropdown-content">
+              <a href="#"> Lamborghini </a>
+              <a href="#"> McLaren </a>
+              <a href="#"> Bugatti </a>
+              </div>
+            </div>
+            <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
           </ul>
+        </nav>
+        <nav class="mr-0">
+          <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
         </nav>
       </div>
     </header>
