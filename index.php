@@ -22,11 +22,15 @@
             <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
             <li class="nav-item"><a href="#" class="nav-link active">Nosotros</a></li>
-            <li class="nav-item"><a href="#" class="nav-link active">Login</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link active">Login</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <?php
+      footer();
+     ?>
     <!-- -MENU DE NAVEGACION- -->
     <!-- <div class="container-fluid bg_negro fijo">
       <nav class="navbar navbar-expand-lg navbar-light">

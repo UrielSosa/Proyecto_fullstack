@@ -1,3 +1,5 @@
+
+
 <?php
 //Base de datos//
   $autos = [
@@ -115,3 +117,27 @@
     <?php
   }
  ?>
+
+ <!-- header -->
+ <?php
+  function nav(){
+  ?>
+    <header class="container-fluid u_bg-azul">
+      <div class="navbar">
+        <div class="u_logo ml-0">
+          <img src="img/logo.png" alt="Logo de hotwheels">
+        </div>
+        <nav class="nav mr-0">
+          <ul class="nav">
+            <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">Nosotros</a></li>
+            <li class="nav-item"><a href="login.php" class="nav-link active">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <?php
+  }
+  ?>

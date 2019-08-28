@@ -1,3 +1,6 @@
+<?php
+  include_once("php/base-de-datos.php");
+?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -9,8 +12,13 @@
     <title>Login</title>
   </head>
   <body>
+
+    <?php
+      nav();
+    ?>
+
     <div class="container">
-	    <div class="d-flex justify-content-center h-100">
+	    <div class="d-flex justify-content-center h-100 mt-5">
 		    <div class="card">
 			    <div class="card-header">
 				    <h3>Iniciar Sesión</h3>
@@ -52,5 +60,9 @@
 		</div>
 	</div>
 </div>
+
+<?php
+  footer();
+ ?>
   </body>
 </html>
