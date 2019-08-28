@@ -15,7 +15,7 @@
     <header class="container-fluid u_bg-azul">
       <div class="navbar">
         <div class="u_logo ml-0">
-          <img src="img/logo.png" alt="Logo de hotwheels">
+          <img src="img/logo1.png" alt="Logo de hotwheels">
         </div>
         <nav class="nav mr-0">
           <ul class="nav">
