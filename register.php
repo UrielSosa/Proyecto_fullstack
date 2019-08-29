@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/7bcccd3ed9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Register</title>
   </head>
   <body>
@@ -57,8 +57,6 @@
           </div>
         </div>
         <div class="form-row">
-        <!-- <label for="fecha" class="form-group ml-0">¿Fecha de nacimiento?</label>
-        <div class="form-group ml-sm-10 ml-lg-5 col-sm-4 col-lg-3"> -->
         <div class="form-group col-sm-12 ml-lg-5 col-sm-4 col-lg-3 mr-5"><p>¿Fecha de nacimiento?</p>
         <input type="date" class="form-control" name="cumpleaños" step="1" min="1980-01-01" max="2019-12-31" value="">
         </div>

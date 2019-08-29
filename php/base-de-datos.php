@@ -147,8 +147,8 @@
             <a href="#"> Bugatti </a>
             </div>
           </div>
-          <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
         </ul>
+        <li class="nav-item"><a href="preguntas.php" class="nav-link active "> Preguntas </a></li>
       </nav>
       <nav class="mr-0">
         <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
