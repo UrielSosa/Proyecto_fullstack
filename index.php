@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/login.css">
     <title>Home</title>
 
     <style>
@@ -27,39 +28,7 @@
     </style>
   </head>
   <body>
-    <header class="container-fluid u_bg-azul">
-      <div class="navbar">
-        <div class="u_logo ml-0 mr-0">
-          <img src="img/logo1.png" alt="Logo de hotwheels">
-        </div>
-        <nav class="nav ml-0">
-          <ul class="nav">
-            <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
-            <div class="dropdown">
-              <button class="dropbtn"> Autos</button>
-              <div class="dropdown-content">
-              <a href="#"> Lamborghini </a>
-              <a href="#"> McLaren </a>
-              <a href="#"> Bugatti </a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn"> Motos </button>
-              <div class="dropdown-content">
-              <a href="#"> Lamborghini </a>
-              <a href="#"> McLaren </a>
-              <a href="#"> Bugatti </a>
-              </div>
-            </div>
-            <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
-          </ul>
-        </nav>
-        <nav class="mr-0">
-          <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
-        </nav>
-      </div>
-    </header>
-
+    <?php nav(); ?>
     <!-- Inicio del main -->
     <main class="baner-fluid u_pos-a">
       <div class="bd-example">

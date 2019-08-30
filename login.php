@@ -21,7 +21,7 @@
 
     <div class="container">
 	    <div class="d-flex justify-content-center h-100 mt-5">
-		    <div class="card">
+		    <div class="card login">
 			    <div class="card-header">
 				    <h3 class="d-flex justify-content-start">Iniciar Sesión</h3>
 				      <div class="d-flex justify-content-end social_icon">
