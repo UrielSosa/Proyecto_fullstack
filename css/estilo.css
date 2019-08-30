@@ -28,7 +28,7 @@ padding-top: 2vw;
 padding-bottom:2vw;
 }
 body{
-	background-image:url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+	background-image:url(../img/fondo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
