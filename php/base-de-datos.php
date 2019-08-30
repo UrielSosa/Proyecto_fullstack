@@ -46,7 +46,8 @@
           ];
 
 //Footer de la pagina//
-  function footer(){ ?>
+  function footer(){
+    ?>
 <footer class="page-footer font-small stylish-color-dark pt-4">
   <div class="container bg_azul_os mt-2 pt-2">
     <div class="row">
@@ -146,8 +147,8 @@
             <a href="#"> Bugatti </a>
             </div>
           </div>
+          <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
         </ul>
-        <li class="nav-item"><a href="preguntas.php" class="nav-link active "> Preguntas </a></li>
       </nav>
       <nav class="mr-0">
         <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
