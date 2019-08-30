@@ -11,6 +11,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Home</title>
+
+    <style>
+    /* boton de carrito */
+
+    .icono{
+      font-size: 140%;
+    }
+    .btn-outline-success {
+         color: #fff;
+         background-color: #41ccbf;
+         border-color: #41ccbf;
+      }
+
+    </style>
   </head>
   <body>
     <header class="container-fluid u_bg-azul">
@@ -86,22 +100,28 @@
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <center>
+              <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
             </div>
           </div>
           <div class="card col-3 m-1">
             <img src="img/card-m/ComforTec-Platina.png" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
         <div class="card col-3 mt-1 ml-1">
           <img src="img/card-m/Kawasaki-Aramot-S.A.C.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
         <div class="card col-3 col-3 mt-1 mr-1">
@@ -109,23 +129,29 @@
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-  muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
         <div class="card col-3 m-1">
           <img src="img/card-m/Triax-150.png" class="card-img-top" alt="...">
           <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <center>
+          <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
         </div>
       </div>
       <div class="card col-3 mt-1 ml-1">
         <img src="img/card-m/TRconoweb.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <center>
+          <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
         </div>
       </div>
       </div>
