@@ -107,7 +107,9 @@ input:focus{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -117,3 +119,9 @@ input:focus{
   color: blue;
 }
 .dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* card index */
+
+.index{
+background-color: rgba(255, 255, 255, 0.7) !important;
+}

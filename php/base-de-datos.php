@@ -46,8 +46,7 @@
           ];
 
 //Footer de la pagina//
-  function footer(){
-    ?>
+  function footer(){ ?>
 <footer class="page-footer font-small stylish-color-dark pt-4">
   <div class="container bg_azul_os mt-2 pt-2">
     <div class="row">
@@ -155,7 +154,7 @@
       </nav>
     </div>
   </header>
-  
+
   <?php
   }
   ?>
