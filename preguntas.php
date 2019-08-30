@@ -16,21 +16,48 @@
   <body>
     <?php nav() ?>
     <h2 class="text-center text-white">Preguntas Frecuentes</h2>
-    <div class="dropdown show">
-      <ul>
-        <li>
-          <a href="#">¿Hacen envios a domicilio?</a>
-          <br>
-          <a href="#">¿Que tipo de tarjetas de credito/devito utilizan?</a>
-          <br>
-          <a href="#">¿Que hago si el producto que compre no llega en el tiempo estiado?</a>
-          <br>
-          <a href="#">¿Como realizo los pagos si no utilizo targetas de credito/devito?</a>
-          <br>
-          <a href="#"></a>
-        </li>
-      </ul>
+    <div class="container">
+      <br>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Medios de pago
+          <samp class="caret"></samp>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+        </ul>
+      </div>
+      <br>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Envios/Entregas
+          <samp class="caret"></samp>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+        </ul>
+      </div>
+      <br>
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Proveedores
+          <samp class="caret"></samp>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+          <li role="presentation"><a role="item" href="#">items </a></li>
+        </ul>
+      </div>
     </div>
 
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </body>
 </html>
