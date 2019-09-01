@@ -1,5 +1,3 @@
-
-
 <?php
 //Base de datos//
   $autos = [
@@ -128,9 +126,9 @@
       <div class="u_logo ml-0 mr-0">
         <img src="img/logo1.png" alt="Logo de hotwheels">
       </div>
-      <nav class="nav ml-0">
-        <ul class="nav">
-          <li class="nav-item"><a href="index.php" class="nav-link active">Home</a></li>
+      <nav class="nav ml-0 mr-0">
+        <ul class="nav d-flex justify-content-end">
+          <li class="nav-item m-0"><a href="index.php" class="nav-link active">Home</a></li>
           <div class="dropdown">
             <button class="dropbtn"> Autos</button>
             <div class="dropdown-content">

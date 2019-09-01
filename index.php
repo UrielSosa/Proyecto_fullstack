@@ -63,7 +63,7 @@
       <!-- articulo card -->
 <div class="card-group ">
       <div class="row">
-          <div class="card index col-3 col-3 mt-1 mr-1">
+          <div class="card index col-12 col-md-3 mt-1 mr-1">
             <img src="img/card-m/Honda-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Honda</h5>
@@ -72,7 +72,7 @@
               <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
             </div>
           </div>
-          <div class="card index col-3 m-1">
+          <div class="card index col-12 col-md-3 m-1">
             <img src="img/card-m/ComforTec-Platina.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Bajaj Platina</h5>
@@ -81,7 +81,7 @@
             <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
-        <div class="card index col-3 mt-1 ml-1">
+        <div class="card index col-12 col-md-3 mt-1 ml-1">
           <img src="img/card-m/Kawasaki-Aramot-S.A.C.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Kawasaki Aramot S.A.C</h5>
@@ -90,7 +90,7 @@
             <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
-        <div class="card index col-3 col-3 mt-1 mr-1">
+        <div class="card index col-12 col-md-3 mt-1 mr-1">
           <img src="img/card-m/Sengsis.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Sengsis</h5>
@@ -99,7 +99,7 @@
             <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
           </div>
         </div>
-        <div class="card index col-3 m-1">
+        <div class="card index col-12 col-md-3 m-1">
           <img src="img/card-m/Triax-150.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Triax</h5>
@@ -108,7 +108,7 @@
           <span class="btn btn-outline-success">Añadir al carrito <i class="icono fas fa-cart-plus"></i></span>
         </div>
       </div>
-      <div class="card index col-3 mt-1 ml-1">
+      <div class="card index col-12 col-md-3 mt-1 ml-1">
         <img src="img/card-m/TRconoweb.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">TRconoweb</h5>

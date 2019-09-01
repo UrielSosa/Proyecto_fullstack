@@ -14,7 +14,7 @@
 .active{
 	color: white;
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 1rem;
 }
 .active: hover{
 	color: gray;
@@ -34,5 +34,11 @@ body{
 }
 
 .card img{
-	white:100%;
+	width: 100%;
+}
+
+@media(min-width: 850px) {
+	.resp{
+		font-size: 0.5rem;
+	}
 }

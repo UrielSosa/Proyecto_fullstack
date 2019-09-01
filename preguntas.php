@@ -24,9 +24,9 @@
             <samp class="caret"></samp>
           </button>
           <ul class="dropdown-content mio ml-2" aria-labelledby="dropdownMenu1">
-            <li role="presentation"><a role="item" href="#">¿Que tipos de tagetas aceptan ?</a></li>
-            <li role="presentation"><a role="item" href="#">¿Solo utilizan tagrtas?</a></li>
-            <li role="presentation"><a role="item" href="#">¿Utilizan credito/devito?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Qué tipos de tarjetas aceptan?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Sólo utilizan tarjetas?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Utilizan crédito/débito?</a></li>
             <li role="presentation"><a role="item" href="#">¿Utilizan otros medios de pago?</a></li>
           </ul>
         </div>
@@ -38,8 +38,8 @@
           </button>
           <ul class="dropdown-content mio " aria-labelledby="dropdownMenu2">
             <li role="presentation"><a role="item" href="#">¿Hacen envios a todo el pais?</a></li>
-            <li role="presentation"><a role="item" href="#">¿Cuanto tiempo tardan en llegar los envios?</a></li>
-            <li role="presentation"><a role="item" href="#">¿Que susede si no llega mi compra?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Cuánto tiempo tardan en llegar los envios?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Qué sucede si no llega mi compra?</a></li>
             <li role="presentation"><a role="item" href="#">¿Puedo ir a retirar yo el producto?</a></li>
           </ul>
         </div>
@@ -50,10 +50,9 @@
             <samp class="caret"></samp>
           </button>
           <ul class="dropdown-content mio " aria-labelledby="dropdownMenu3">
-            <li role="presentation"><a role="item" href="#">¿Que tipos de Proveedores poseen? </a></li>
-            <li role="presentation"><a role="item" href="#">¿Son legitimos? </a></li>
-            <li role="presentation"><a role="item" href="#">¿Cuales son  los compromisos a cumplir con los proveedores?</a></li>
-            <li role="presentation"><a role="item" href="#">¿Cuales son algunas de los fabricantes?</a></li>
+            <li role="presentation"><a role="item" href="#">¿Qué tipos de Proveedores poseen? </a></li>
+            <li role="presentation"><a role="item" href="#">¿Son legítimos? </a></li>
+            <li role="presentation"><a role="item" href="#">¿Cuáles son  los compromisos a cumplir con los proveedores?</a></li>
           </ul>
         </div>
 
