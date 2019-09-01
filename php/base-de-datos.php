@@ -127,7 +127,7 @@
         <img src="img/logo1.png" alt="Logo de hotwheels">
       </div>
       <nav class="nav ml-0 mr-0">
-        <ul class="nav d-flex justify-content-end">
+        <ul class="nav d-flex col-3 col-md-12">
           <li class="nav-item m-0"><a href="index.php" class="nav-link active">Home</a></li>
           <div class="dropdown">
             <button class="dropbtn"> Autos</button>
@@ -146,10 +146,8 @@
             </div>
           </div>
           <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
+          <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
         </ul>
-      </nav>
-      <nav class="mr-0">
-        <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
       </nav>
     </div>
   </header>
