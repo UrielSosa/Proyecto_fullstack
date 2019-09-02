@@ -6,14 +6,16 @@
   <head>
     <meta charset="utf-8">
     <!-- LINKS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.ico">
+    <script src="https://kit.fontawesome.com/7bcccd3ed9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>register</title>
+    <link rel="stylesheet" href="css/master.css">
+    <title>Register</title>
   </head>
   <body>
-    <br><h3 id="register">Register (no funcional)</h3><br><br>
-    <div class="container">
+<?php nav() ?>
+    <div class="container mt-5" id="Register">
       <form class="" action="" method="post">
         <div class="form-row">
           <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-m-12">
@@ -44,15 +46,20 @@
             <label for="Numero2">Numero de linea</label>
             <input type="text" class="form-control" id="Numero2" placeholder="0800-888-000">
           </div>
-          <div class="form-group ml-5">
-            <label for="exampleFormControlSelect1">¿De donde eres?</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Argentina</option>
+          <div class="form-group ml-sm-1 ml-lg-5 col-sm-12 col-lg-3">
+            <label for="lugar">¿De donde eres?</label>
+            <select class="form-control">
+              <option >Argentina</option>
               <option>Brasil</option>
               <option>Colombia</option>
               <option>Chile</option>
             </select>
           </div>
+        </div>
+        <div class="form-row">
+        <div class="form-group col-sm-12 ml-lg-5 col-sm-4 col-lg-3 mr-5"><p>¿Fecha de nacimiento?</p>
+        <input type="date" class="form-control" name="cumpleaños" step="1" min="1980-01-01" max="2019-12-31" value="">
+        </div>
         </div>
         <div class="form-check form-check-inline ml-sm-0 ml-lg-5">
           <input class="form-check-input" type="radio" name="genero" id="G-mujer" value="Mujer">
@@ -66,6 +73,11 @@
           <input class="form-check-input" type="radio" name="genero" id="G-otro" value="Otro">
           <label class="form-check-label" for="Otro">Otro</label>
         </div>
+        <br><br>
+        <center>
+        <button type="submit" class="btn btn-info" name="button"> Registrate</button>
+
+      </div>
       </form>
     </div>
 <?php

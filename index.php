@@ -6,30 +6,16 @@
   <head>
     <meta charset="utf-8">
     <!-- LINKS -->
+    <script src="https://kit.fontawesome.com/7bcccd3ed9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
     <title>Home</title>
-    <link rel="stylesheet" href="css/estilo.css">
   </head>
   <body>
-    <!-- -MENU DE NAVEGACION- -->
-    <div class="container-fluid bg_negro fijo">
-      <nav class="navbar navbar-expand-lg navbar-light bg_negro">
-        <a class="navbar-brand m-0 text-white bg_azul font" href="#"><b> <h1> HOT WHEELS </h1></b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-        <div class="collapse navbar-collapse d-flex justify-content-end font" id="navbarTogglerDemo02">
-          <ul class="navbar-nav m-0 mt-2 mt-lg-0">
-            <li class="nav-item active"><a class="nav-link text-white bg_azul font" href="#"> <b> Login </b> <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item active"><a class="nav-link text-white bg_azul font" href="#"> <b> About </b><span class="sr-only">(current)</span></a></li>
-            <li class="nav-item active"><a class="nav-link text-white bg_azul font" href="#"> <b>Services</b>  <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item active"><a class="nav-link text-white bg_azul font" href="#"> <b> Contact </b>  <span class="sr-only">(current)</span></a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!-- main de a pagina -->
-    <main class="container fluid bg-dark">
+    <?php nav(); ?>
+    <!-- Inicio del main -->
+    <main class="baner-fluid u_pos-a">
       <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -48,7 +34,7 @@
               </div>
             <?php endforeach ?>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <a class="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
@@ -58,8 +44,71 @@
           </a>
         </div>
       </div>
-    </main>
-    <?php footer();?>
+
+      <!-- articulo card -->
+<div class="card-group ">
+      <div class="row">
+          <div class="card index col-12 col-md-3 mt-1 mr-1">
+            <img src="img/card-m/Honda-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Honda</h5>
+              <p class="card-text"><small class="text-muted">US$ 900.200</small></p>
+              <center>
+              <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="card index col-12 col-md-3 m-1">
+            <img src="img/card-m/ComforTec-Platina.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bajaj Platina</h5>
+              <p class="card-text"><small class="text-muted">US$ 1.000.000</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+          </div>
+        </div>
+        <div class="card index col-12 col-md-3 mt-1 ml-1">
+          <img src="img/card-m/Kawasaki-Aramot-S.A.C.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kawasaki Aramot S.A.C</h5>
+            <p class="card-text"><small class="text-muted">US$ 1.200.600</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+          </div>
+        </div>
+        <div class="card index col-12 col-md-3 mt-1 mr-1">
+          <img src="img/card-m/Sengsis.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sengsis</h5>
+            <p class="card-text"><small class="text-muted">US$ 850.000</small></p>
+            <center>
+            <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+          </div>
+        </div>
+        <div class="card index col-12 col-md-3 m-1">
+          <img src="img/card-m/Triax-150.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Triax</h5>
+            <p class="card-text"><small class="text-muted">US$ 920.010</small></p>
+              <center>
+          <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+        </div>
+      </div>
+      <div class="card index col-12 col-md-3 mt-1 ml-1">
+        <img src="img/card-m/TRconoweb.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TRconoweb</h5>
+          <p class="card-text"><small class="text-muted">US$ 700.600</small></p>
+            <center>
+          <span class="btn btn-outline-success">Añadir al carrito <i class="carrito fas fa-cart-plus"></i></span>
+        </div>
+      </div>
+      </div>
+  </div>
+</main>
+<!-- footer -->
+<?php
+  footer();
+ ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
