@@ -51,9 +51,9 @@
     <div class="row">
       <div class="col-lg-2 col-md-12 mb-4">
         <!--Image-->
-        <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid"
-            alt="">
+        <div class="view overlay z-depth-1-half position-relative">
+          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid" width="100%">
+          <img src="img/descuento-50.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -63,8 +63,8 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/Lamborghini-Veneno.jpg" class="img-fluid"
-            alt="">
+          <img src="img/carousel/Lamborghini-Veneno.jpg" class="img-fluid"  width="100%">
+          <img src="img/oferta.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -73,8 +73,8 @@
       <!--Image-->
       <div class="col-lg-2 col-md-6 mb-4">
         <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/McLaren-P1.jpg" class="img-fluid"
-            alt="">
+          <img src="img/carousel/McLaren-P1.jpg" class="img-fluid"  width="100%">
+          <img src="img/nuevo.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -83,8 +83,8 @@
       <!--Image-->
       <div class="col-lg-2 col-md-12 mb-4">
         <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/Hennessey-venom-gt-spyder.jpg" class="img-fluid"
-            alt="">
+          <img src="img/carousel/Hennessey-venom-gt-spyder.jpg" class="img-fluid" width="100%">
+          <img src="img/descuento-50.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -93,8 +93,8 @@
       <!--Image-->
       <div class="col-lg-2 col-md-6 mb-4">
         <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid"
-            alt="">
+          <img src="img/carousel/Pagani-Zonda-Cinque-Roadster.jpg" class="img-fluid" width="100%">
+          <img src="img/oferta.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -103,13 +103,19 @@
       <!--Image-->
       <div class="col-lg-2 col-md-6 mb-4">
         <div class="view overlay z-depth-1-half">
-          <img src="img/carousel/Lykan-Hypersport.jpg" class="img-fluid"
-            alt="">
+          <img src="img/carousel/Lykan-Hypersport.jpg" class="img-fluid" width="100%">
+          <img src="img/nuevo.png" class="c_position_abs" width="30%">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
         </div>
       </div>
+    </div>
+    <!-- - redes sociales y demas - -->
+    <div class="container-fluid bg-dark social-icon">
+      <span><i class="fab fa-facebook-square"></i></span>
+      <span><i class="fab fa-google-plus-square"></i></span>
+      <span><i class="fab fa-twitter-square"></i></span>
     </div>
   </div>
 </footer>
@@ -128,8 +134,17 @@
       </div>
       <nav class="nav ml-0 mr-0">
         <ul class="nav d-flex col-3 col-md-12">
-          <li class="nav-item m-0"><a href="index.php" class="nav-link active">Home</a></li>
-          <div class="dropdown">
+                  <div class="page">
+                    <div class="page__demo">
+                      <label class="field a-field a-field_a1 page__field">
+                        <input class="field__input a-field__input" placeholder="Buscar" required>
+                        <span class="a-field__label-wrap">
+                          <span class="a-field__label">Buscador</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+          <div class="dropdown m-0">
             <button class="dropbtn"> Autos</button>
             <div class="dropdown-content">
             <a href="#"> Lamborghini </a>
@@ -137,7 +152,7 @@
             <a href="#"> Bugatti </a>
             </div>
           </div>
-          <div class="dropdown">
+          <div class="dropdown m-0">
             <button class="dropbtn"> Motos </button>
             <div class="dropdown-content">
             <a href="#"> Lamborghini </a>
@@ -145,9 +160,12 @@
             <a href="#"> Bugatti </a>
             </div>
           </div>
-          <li class="nav-item"><a href="#" class="nav-link active"> Preguntas </a></li>
-          <div class="nav-item"><a href="login.php" class="nav-link active">Login</a></div>
         </ul>
+      </nav>
+      <nav class="nav m-0">
+        <div class="nav-item m-0"><a href="index.php" class="nav-link active"><i class="fas fa-home"></i></a></div>
+        <div class="nav-item m-0"><a href="login.php" class="nav-link active"><i class="fas fa-sign-in-alt"></i></a></div>
+        <div class="nav-item m-0"><a href="preguntas.php" class="nav-link active"><i class="fas fa-question"></i></a></div>
       </nav>
     </div>
   </header>
