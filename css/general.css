@@ -17,6 +17,9 @@ body{
 	padding-top: 2%;
 	padding-bottom:2%;
 }
+.alert{
+	text-align: center;
+}
 /* Login */
 
 .login{

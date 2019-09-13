@@ -1,7 +1,50 @@
 <?php
 function isEmail($email){
-  return filter_validate($email,FILTER_VALIDATE_EMAIL);
+  return filter_var($email,FILTER_VALIDATE_EMAIL);
 }
+
+function hashed($pass){
+  return password_hash($pass, PASSWORD_DEFAULT);
+}
+
+function validar($datos){
+  $errores = [];
+  if ($datos) {
+    if (strlen($datos["nombre"])==="") {
+      $errores['nombre'] = "El campo nombre se encuentra vacio";
+    }
+    if (strlen($datos["apellido"])==="") {
+      $errores['apellido'] = "El campo apellido se encuentra vacio";
+    }
+    if (!isEmail($datos['email'])) {
+      $errores['email'] = "El email tiene un formato incorrecto";
+    }
+    if (strlen($datos["password"])<=6) {
+      $errores['password'] ="La contraseña tiene menos de 6 caracteres";
+    }
+    if ($datos["password"] != $datos["repassword"]) {
+      $errores['repassword'] = "Las contraseñas no coinciden";
+    }
+  }
+  return $errores;
+}
+
+function armarUsuario($datos){
+  $passwordhash = hashed($datos['password']);
+  $usuario = [
+    "nombre" => $datos["nombre"],
+    "apellido" => $datos["apellido"],
+    "email" => $datos["email"],
+    "password" => $passwordhash,
+    "sexo" => $datos["sexo"],
+  ];
+  return $usuario;
+}
+function guardarUsuario($usuario){
+  $json = json_encode($usuario);
+  file_put_contents("usuarios.json",$json.PHP_EOL, FILE_APPEND);
+}
+
 
 
 /* base de datos de autos*/
