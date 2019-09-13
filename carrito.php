@@ -3,9 +3,7 @@
   /**
   * @author <<---- Camila--Uriel--Tomas--Matias ---->>
   */
-=======
   include_once("php/base-de-datos.php");
->>>>>>> 58d055ca9b7a9b3a54f1f26da10257c3c43498ff
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
