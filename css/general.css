@@ -17,7 +17,10 @@ body{
 	padding-top: 2%;
 	padding-bottom:2%;
 }
+<<<<<<< HEAD:css/general.css
 /* Login */
+=======
+>>>>>>> 58d055ca9b7a9b3a54f1f26da10257c3c43498ff:css/general.css
 .login{
 	height: 370px;
 	margin-top: auto;
@@ -131,9 +134,12 @@ background-color: rgba(255, 255, 255, 0.7) !important;
 		 background-color: #41ccbf;
 		 border-color: #41ccbf;
 	}
+<<<<<<< HEAD:css/general.css
 .card-group .card:hover{
 	transform: scale(1.1);
 }
+=======
+>>>>>>> 58d055ca9b7a9b3a54f1f26da10257c3c43498ff:css/general.css
 .card img{
 	width: 100%;
 }
