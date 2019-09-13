@@ -87,11 +87,13 @@
         <button type="submit" class="btn btn-info" name="button"> Registrate</button>
 
       </div>
-      <?php foreach ($errores as $key => $error): ?>
+      <?php if($errores):
+         foreach ($errores as $key => $error): ?>
         <div class="alert alert-danger" role="alert">
           <strong>Oh no!!</strong><?= $errores[$key] ?? '' ?>
         </div>
-      <?php endforeach; ?>
+      <?php endforeach;
+    endif;?>
       </form>
     </div>
 
