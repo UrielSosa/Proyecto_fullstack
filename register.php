@@ -1,5 +1,5 @@
 <?php
-  include_once("php/funciones.php");
+  include_once("controladores/funciones.php");
   /**
   * @author <<---- Camila--Uriel--Tomas--Matias ---->>
   */
