@@ -7,13 +7,8 @@
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
     <head>
-      <meta charset="utf-8">
-        <!-- LINKS -->
-      <link rel="icon" type="image/png" sizes="32x32" href="img/icon.ico">
-      <script src="https://kit.fontawesome.com/7bcccd3ed9.js"></script>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/master.css">
       <title>Preguntas frecuentes</title>
+      <?php include_once "head.php" ?>
     </head>
     <body>
       <!-- incluimos la barra de navegacion -->

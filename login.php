@@ -7,14 +7,8 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <title>Iniciar sesión </title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.ico">
-    <!-- LINKS -->
-    <script src="https://kit.fontawesome.com/7bcccd3ed9.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/master.css">
+    <?php include_once "head.php" ?>
   </head>
   <body>
     <!-- incluimos la barra de navegacion -->
@@ -52,11 +46,14 @@
 				<div class="d-flex justify-content-center links">¿No estas registrado aun?<a href="register.php">Registrate Ahora</a></div>
 				<div class="d-flex justify-content-center">
 					<a href="#">¿Olvidaste tu Contraseña?</a>
+>>>>>>> feature
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<<<<<<< HEAD
+=======
 
 <?php include_once "vistas/footer.php";?>
 
