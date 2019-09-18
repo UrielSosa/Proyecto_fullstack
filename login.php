@@ -1,8 +1,16 @@
 <?php
-  include_once "php/funciones.php";
+  include_once "controladores/funciones.php";
   /**
   * @author <<---- Camila--Uriel--Tomas--Matias ---->>
   */
+  if ($_POST) {
+    $validacion = validarLogin($_POST['email'],$_POST['password']);
+    if ($validacion === 2) {
+      header("location:index.php");
+    }else {
+      echo "<div class='alert alert-danger' role='alert'> La contraseña o el email son incorrecto</div>";
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
@@ -21,18 +29,18 @@
 				    <h3 class="d-flex justify-content-start">Iniciar Sesión</h3>
 			    </div>
 			    <div class="card-body">
-				    <form>
+				    <form action="" method="POST">
 					    <div class="input-group form-group">
 						    <div class="input-group-prepend">
 							    <span class="input-group-text"><i class="fas fa-user"></i></span>
 						    </div>
-						    <input type="text" class="form-control" placeholder="Nombre o Email">
+						    <input type="text" class="form-control" placeholder="Nombre o Email" name="email">
 					    </div>
 					    <div class="input-group form-group">
 						    <div class="input-group-prepend">
 							    <span class="input-group-text"><i class="fas fa-key"></i></span>
 						    </div>
-						      <input type="password" class="form-control" placeholder="Contraseña">
+						      <input type="password" class="form-control" placeholder="Contraseña" name="password">
 					    </div>
 					    <div class="row align-items-center remember">
 						    <input type="checkbox">Remember Me
@@ -46,14 +54,11 @@
 				<div class="d-flex justify-content-center links">¿No estas registrado aun?<a href="register.php">Registrate Ahora</a></div>
 				<div class="d-flex justify-content-center">
 					<a href="#">¿Olvidaste tu Contraseña?</a>
->>>>>>> feature
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<<<<<<< HEAD
-=======
 
 <?php include_once "vistas/footer.php";?>
 
