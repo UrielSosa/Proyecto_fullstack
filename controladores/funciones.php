@@ -8,71 +8,64 @@ function hashed($pass){
 }
 
 function validar($datos,$imagen){
-    $errores = [];
-    $nombre = trim($datos['nombre']);
-    if(empty($nombre )){
-        $errores['nombre']="El campo nombre no puede estar en blanco";
-    }
-    $apellido = trim($datos['apellido']);
-    if(empty($apellido )){
-        $errores['apellido']="El campo nombre no puede estar en blanco";
-    }
-    $email = trim($datos['email']);
-    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-        $errores['email']="Email inválido";
-    }
-    $password = trim($datos['password']);
-    if(empty($password)){
-        $errores['password']="La contraseña no puede estar en blanco";
-    }
-    elseif (strlen($password)<6) {
-        $errores['password']="La contraseña como mínimo debe tener 6 caracteres";
-    }
-    $repassword = trim($datos['repassword']);
-    if($password != $repassword){
-        $errores['repassword']="Las contraseñas deben ser iguales";
-    }
-    $sexo = trim($datos['sexo']);
-    if(($sexo)){
-        $errores['sexo'] = "El campo sexo no puede estar en blanco";
-    }
-    $celular = trim($datos['celular']);
-    if(empty($celular)){
-        $errores['celular']="El campo celular no puede estar en blanco";
-    }
-    if(isset($_FILES)){
-        $nombre = $imagen['avatar']['name'];
-        $ext = pathinfo($nombre,PATHINFO_EXTENSION);
-        if($imagen['avatar']['error']==4){
-            $errores['avatar']=".";
+  $errores = [];
+  $nombre = trim($datos['nombre']);
+  $apellido = trim($datos['apellido']);
+  $email = trim($datos['email']);
+  $password = trim($datos['password']);
+  $repassword = trim($datos['repassword']);
+  $celular = trim($datos['celular']);
+  // dd($datos);
 
-        }elseif ($ext != "jpg" && $ext != "png") {
-            $errores['avatar']="Formato inválido";
-        }
-    }
-
-    return $errores;
+  if(empty($nombre )){
+    $errores['nombre']="El campo nombre no puede estar en blanco";
+  }
+  if(empty($apellido )){
+    $errores['apellido']="El campo apellido no puede estar en blanco";
+  }
+  if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+    $errores['email']="Email inválido";
+  }
+  if(empty($password)){
+    $errores['password']="La contraseña no puede estar en blanco";
+  }elseif (strlen($password)<6) {
+    $errores['password']="La contraseña como mínimo debe tener 6 caracteres";
+  }
+  if($password != $repassword){
+    $errores['repassword']="Las contraseñas deben ser i guales";
+  }
+  if(empty($celular)){
+    $errores['celular']="El campo celular no puede estar en blanco";
+  }
+  if(isset($_FILES)){
+    $nombre = $imagen['avatar']['name'];
+    $ext = pathinfo($nombre,PATHINFO_EXTENSION);
+      if($imagen['avatar']['error']==4){
+        $errores['avatar']=" Ingresa tu foto";
+      }elseif ($ext != "jpg" && $ext != "png") {
+        $errores['avatar']="Formato inválido";
+      }
+  }
+  return $errores;
 }
 
 function armarRegistro($datos,$avatar){
-    $usuario = [
-        'nombre' => $datos['nombre'],
-        'apellido' => $datos['apellido'],
-        'email' => $datos['email'],
-        'password' => hashed($datos['password']),
-        'celular' => $datos['celular'],
-        'ciudad' => $datos['ciudad'],
-        'nacimiento' => $datos['nacimiento'],
-        'sexo' => $datos['sexo']
-    ];
-
-    return $usuario;
-
+  $usuario = [
+    'nombre' => $datos['nombre'],
+    'apellido' => $datos['apellido'],
+    'email' => $datos['email'],
+    'password' => hashed($datos['password']),
+    'celular' => $datos['celular'],
+    'ciudad' => $datos['ciudad'],
+    'nacimiento' => $datos['nacimiento'],
+    'sexo' => $datos['sexo']
+  ];
+  return $usuario;
 }
 
 function guardarRegistro($registro){
-    $archivoJson = json_encode($registro);
-    file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
+  $archivoJson = json_encode($registro);
+  file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
 }
 
 function armarAvatar($imagen){
@@ -89,7 +82,38 @@ function armarAvatar($imagen){
     return $avatar;
 }
 
+function dd($dato){
+    echo "<pre>";
+        var_dump($dato);
+        exit;
+    echo "</pre>";
+}
+function old($dato){
+    if(isset($_POST[$dato])){
+        return $_POST[$dato];
+    }
+}
 
+// ------------VALIDAR LOGIN-----------
+/* Hay que hacer mas funcional el login, validar bien la contraseña y el email*/
+/*
+function validarLogin($email, $password){
+  $usuarios = file_get_contents("usuarios.json");
+  $json = json_decode($usuarios, true);
+  $paso = 0;
+  dd($json);
+  foreach ($json as $dato => $valor) {
+
+      if ($valor === $email) {
+        $paso++;
+      }
+      if (password_verify($password, $valor)){
+        $paso++;
+      }
+  }
+  return $paso;
+}
+*/
 
 /* base de datos de autos*/
 $autos = [
