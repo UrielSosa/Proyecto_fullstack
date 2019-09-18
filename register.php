@@ -5,14 +5,17 @@
   */
   $errores = [];
   if ($_POST) {
-    $errores = validar($_POST);
-    // if (count($errores) == 0) {
-    //     $usuario = armarUsuario($_POST);
-    //     guardarUsuario($usuario);
-    //    header(".php");
-    //   exit;
-    // }
+    $errores = validar($_POST,$_FILES);
+   if(count($errores)==0){
+     $avatar = armarAvatar($_FILES);
+     $registro = armarRegistro($_POST,$avatar);
+     guardarRegistro($registro);
+
+     //De n o excistir errores en la información tipeada por el usuario entonces lo redirecciono a donde yo desee.
+     header("location:login.php");
+   }
   }
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -25,7 +28,7 @@
     <?php include_once "vistas/header.php";?>
 
     <div class="container mt-5" id="Register">
-      <form action="" method="POST">
+      <form action="" method="POST" enctype="multipart/form-data">
         <div class="form-row">
           <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-m-12">
             <label for="Nombre">Nombre</label>
@@ -50,10 +53,6 @@
           <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-xs-3 ml-xs-0">
             <label for="Numero1">Numero de celular</label>
             <input type="text" class="form-control" id="Numero1" placeholder="+11-123456789" name="celular">
-          </div>
-          <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-xs-3 ml-xs-0">
-            <label for="Numero2">Numero de linea</label>
-            <input type="text" class="form-control" id="Numero2" placeholder="0800-888-000">
           </div>
           <div class="form-group ml-sm-1 ml-lg-5 col-sm-12 col-lg-3">
             <label for="lugar">¿De donde eres?</label>
@@ -81,6 +80,10 @@
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="sexo" id="G-otro" value="O">
           <label class="form-check-label" for="Otro">Otro</label>
+        </div>
+        <div class="form-group col-sm-6 col-lg-5 ml-sm-0 ml-lg-5 col-xs-3 ml-xs-0 mt-3 pl-0">
+          <label for="avatar"> Ingresar foto </label>
+          <input required name="avatar" type="file" class="form-control" id="avatar">
         </div>
         <br><br>
         <center>

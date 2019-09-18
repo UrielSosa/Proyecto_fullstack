@@ -7,42 +7,86 @@ function hashed($pass){
   return password_hash($pass, PASSWORD_DEFAULT);
 }
 
-function validar($datos){
-  $errores = [];
-  if ($datos) {
-    if (strlen($datos["nombre"])==="") {
-      $errores['nombre'] = "El campo nombre se encuentra vacio";
+function validar($datos,$imagen){
+    $errores = [];
+    $nombre = trim($datos['nombre']);
+    if(empty($nombre )){
+        $errores['nombre']="El campo nombre no puede estar en blanco";
     }
-    if (strlen($datos["apellido"])==="") {
-      $errores['apellido'] = "El campo apellido se encuentra vacio";
+    $apellido = trim($datos['apellido']);
+    if(empty($apellido )){
+        $errores['apellido']="El campo nombre no puede estar en blanco";
     }
-    if (!isEmail($datos['email'])) {
-      $errores['email'] = "El email tiene un formato incorrecto";
+    $email = trim($datos['email']);
+    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+        $errores['email']="Email inválido";
     }
-    if (strlen($datos["password"])<=6) {
-      $errores['password'] ="La contraseña tiene menos de 6 caracteres";
+    $password = trim($datos['password']);
+    if(empty($password)){
+        $errores['password']="La contraseña no puede estar en blanco";
     }
-    if ($datos["password"] != $datos["repassword"]) {
-      $errores['repassword'] = "Las contraseñas no coinciden";
+    elseif (strlen($password)<6) {
+        $errores['password']="La contraseña como mínimo debe tener 6 caracteres";
     }
-  }
-  return $errores;
+    $repassword = trim($datos['repassword']);
+    if($password != $repassword){
+        $errores['repassword']="Las contraseñas deben ser iguales";
+    }
+    $sexo = trim($datos['sexo']);
+    if(($sexo)){
+        $errores['sexo'] = "El campo sexo no puede estar en blanco";
+    }
+    $celular = trim($datos['celular']);
+    if(empty($celular)){
+        $errores['celular']="El campo celular no puede estar en blanco";
+    }
+    if(isset($_FILES)){
+        $nombre = $imagen['avatar']['name'];
+        $ext = pathinfo($nombre,PATHINFO_EXTENSION);
+        if($imagen['avatar']['error']==4){
+            $errores['avatar']=".";
+
+        }elseif ($ext != "jpg" && $ext != "png") {
+            $errores['avatar']="Formato inválido";
+        }
+    }
+
+    return $errores;
 }
 
-function armarUsuario($datos){
-  $passwordhash = hashed($datos['password']);
-  $usuario = [
-    "nombre" => $datos["nombre"],
-    "apellido" => $datos["apellido"],
-    "email" => $datos["email"],
-    "password" => $passwordhash,
-    "sexo" => $datos["sexo"],
-  ];
-  return $usuario;
+function armarRegistro($datos,$avatar){
+    $usuario = [
+        'nombre' => $datos['nombre'],
+        'apellido' => $datos['apellido'],
+        'email' => $datos['email'],
+        'password' => hashed($datos['password']),
+        'celular' => $datos['celular'],
+        'ciudad' => $datos['ciudad'],
+        'nacimiento' => $datos['nacimiento'],
+        'sexo' => $datos['sexo']
+    ];
+
+    return $usuario;
+
 }
-function guardarUsuario($usuario){
-  $json = json_encode($usuario);
-  file_put_contents("usuarios.json",$json.PHP_EOL, FILE_APPEND);
+
+function guardarRegistro($registro){
+    $archivoJson = json_encode($registro);
+    file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
+}
+
+function armarAvatar($imagen){
+    $nombre = $imagen['avatar']['name'];
+    $ext = pathinfo($nombre,PATHINFO_EXTENSION);
+    $archivoOrigen = $imagen['avatar']['tmp_name'];
+    $archivoDestino = dirname(__DIR__);
+    $archivoDestino = $archivoDestino."/imagenes/";
+    $avatar = uniqid();
+    $archivoDestino = $archivoDestino.$avatar.".".$ext;
+    //Aquí estoy copiando al servidor nuestro archivo
+    move_uploaded_file($archivoOrigen,$archivoDestino);
+    $avatar = $avatar.".".$ext;
+    return $avatar;
 }
 
 
