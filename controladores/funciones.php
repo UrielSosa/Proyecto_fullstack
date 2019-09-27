@@ -3,9 +3,9 @@ function isEmail($email){
   return filter_var($email,FILTER_VALIDATE_EMAIL);
 }
 
-function hashed($pass){
-  return password_hash($pass, PASSWORD_DEFAULT);
-}
+// function hashed($pass){
+//   return password_hash($pass, PASSWORD_DEFAULT);
+// }
 
 function validar($datos,$imagen){
   $errores = [];
@@ -54,7 +54,7 @@ function armarRegistro($datos,$avatar){
     'nombre' => $datos['nombre'],
     'apellido' => $datos['apellido'],
     'email' => $datos['email'],
-    'password' => hashed($datos['password']),
+    'password' => $datos['password'],//hashed($datos['password']),
     'celular' => $datos['celular'],
     'ciudad' => $datos['ciudad'],
     'nacimiento' => $datos['nacimiento'],
@@ -96,24 +96,37 @@ function old($dato){
 
 // ------------VALIDAR LOGIN-----------
 /* Hay que hacer mas funcional el login, validar bien la contraseña y el email*/
-/*
 function validarLogin($email, $password){
-  $usuarios = file_get_contents("usuarios.json");
-  $json = json_decode($usuarios, true);
-  $paso = 0;
-  dd($json);
-  foreach ($json as $dato => $valor) {
+  // if(file_exists("usuarios.json")){
+  //     $json = file_get_contents("usuarios.json");
+  //
+  //     $datosArray = explode(PHP_EOL, $json);
+  //     $datosArray = json_decode($json, true);
+  // }
 
-      if ($valor === $email) {
-        $paso++;
-      }
-      if (password_verify($password, $valor)){
-        $paso++;
-      }
+  $paso = 0;
+  if(file_exists("usuarios.json")){
+        $json= file_get_contents("usuarios.json");
+        $json = explode(PHP_EOL,$json);
+        array_pop($json);
+        foreach ($json as  $usuarios) {
+            $datosArray[]= json_decode($usuarios,true);
+        }
+        var_dump($datosArray);
   }
+  // dd($json);
+      foreach ($datosArray as $clave => $arrayUsuario) {
+
+          if ($arrayUsuario["email"] === $email) {
+            $paso++;
+          }
+
+          if ($arrayUsuario["password"] === $password){
+            $paso++;
+          }
+      }
   return $paso;
 }
-*/
 
 /* base de datos de autos*/
 $autos = [
