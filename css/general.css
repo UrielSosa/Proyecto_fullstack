@@ -134,9 +134,9 @@ background-color: rgba(255, 255, 255, 0.7) !important;
 		 background-color: #41ccbf;
 		 border-color: #41ccbf;
 	}
-.card-group .card:hover{
+/* .card-group .card:hover{
 	transform: scale(1.1);
-}
+} */
 .card img{
 	width: 100%;
 }
