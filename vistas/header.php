@@ -6,7 +6,7 @@
 <header class="container-fluid u_bg-azul">
   <div class="navbar">
     <div class="u_logo ml-0 mr-0"> <a href="index.php"><img src="img/logo1.png"></a> </div>
-    <nav class="nav ml-auto col-9">
+    <nav class="nav ml-auto col-8">
       <ul class="nav d-flex col-12">
         <div class="page">
           <div class="page__demo">
