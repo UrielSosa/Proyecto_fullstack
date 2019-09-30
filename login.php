@@ -6,6 +6,8 @@
   if ($_POST) {
     $validacion = validarLogin($_POST['email'],$_POST['password']);
     if ($validacion === 2) {
+      $usuario = buscarPorEmail($_POST["email"]);
+      inicioSesion($usuario, $_POST);
       header("location:index.php");
     }else {
       echo "<div class='alert alert-danger' role='alert'> La contraseña o el email son incorrecto</div>";
@@ -30,7 +32,7 @@
 			    </div>
 			    <div class="card-body">
 
-            
+
 				    <form action="" method="POST">
 					    <div class="input-group form-group">
 						    <div class="input-group-prepend">
@@ -45,7 +47,7 @@
 						      <input type="password" class="form-control" placeholder="Contraseña" name="password">
 					    </div>
 					    <div class="row align-items-center remember">
-						    <input type="checkbox">Remember Me
+						    <input type="checkbox" name="recordarme"> Recordarme
 					    </div>
 					    <div class="form-group">
 						    <input type="submit" value="Login" class="btn float-right login_btn">

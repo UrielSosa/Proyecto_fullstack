@@ -1,12 +1,17 @@
 <?php
+session_start();
+// Validacion de e-mail
 function isEmail($email){
   return filter_var($email,FILTER_VALIDATE_EMAIL);
 }
 
-// function hashed($pass){
-//   return password_hash($pass, PASSWORD_DEFAULT);
-// }
+//Haseado de contraseña
+function hashed($pass){
+  return password_hash($pass, PASSWORD_DEFAULT);
+}
 
+
+//validacion de datos del registro
 function validar($datos,$imagen){
   $errores = [];
   $nombre = trim($datos['nombre']);
@@ -32,7 +37,7 @@ function validar($datos,$imagen){
     $errores['password']="La contraseña como mínimo debe tener 6 caracteres";
   }
   if($password != $repassword){
-    $errores['repassword']="Las contraseñas deben ser i guales";
+    $errores['repassword']="Las contraseñas deben ser iguales";
   }
   if(empty($celular)){
     $errores['celular']="El campo celular no puede estar en blanco";
@@ -49,12 +54,13 @@ function validar($datos,$imagen){
   return $errores;
 }
 
+// Se guardan los datos del registro
 function armarRegistro($datos,$avatar){
   $usuario = [
     'nombre' => $datos['nombre'],
     'apellido' => $datos['apellido'],
     'email' => $datos['email'],
-    'password' => $datos['password'],//hashed($datos['password']),
+    'password' => hashed($datos['password']),
     'celular' => $datos['celular'],
     'ciudad' => $datos['ciudad'],
     'nacimiento' => $datos['nacimiento'],
@@ -63,17 +69,20 @@ function armarRegistro($datos,$avatar){
   return $usuario;
 }
 
+//Se guardan los datos del registro en JSON
 function guardarRegistro($registro){
   $archivoJson = json_encode($registro);
   file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
 }
 
+
+// Se crea un avatar
 function armarAvatar($imagen){
     $nombre = $imagen['avatar']['name'];
     $ext = pathinfo($nombre,PATHINFO_EXTENSION);
     $archivoOrigen = $imagen['avatar']['tmp_name'];
     $archivoDestino = dirname(__DIR__);
-    $archivoDestino = $archivoDestino."/imagenes/";
+    $archivoDestino = $archivoDestino."/img/perfil/";
     $avatar = uniqid();
     $archivoDestino = $archivoDestino.$avatar.".".$ext;
     //Aquí estoy copiando al servidor nuestro archivo
@@ -82,6 +91,8 @@ function armarAvatar($imagen){
     return $avatar;
 }
 
+
+//------------------------ PERSISTENCIA DE DATOS ----------------
 function dd($dato){
     echo "<pre>";
         var_dump($dato);
@@ -95,25 +106,10 @@ function old($dato){
 }
 
 // ------------VALIDAR LOGIN-----------
-/* Hay que hacer mas funcional el login, validar bien la contraseña y el email*/
-function validarLogin($email, $password){
-  // if(file_exists("usuarios.json")){
-  //     $json = file_get_contents("usuarios.json");
-  //
-  //     $datosArray = explode(PHP_EOL, $json);
-  //     $datosArray = json_decode($json, true);
-  // }
 
+function validarLogin($email, $password){
   $paso = 0;
-  if(file_exists("usuarios.json")){
-        $json= file_get_contents("usuarios.json");
-        $json = explode(PHP_EOL,$json);
-        array_pop($json);
-        foreach ($json as  $usuarios) {
-            $datosArray[]= json_decode($usuarios,true);
-        }
-        var_dump($datosArray);
-  }
+  $datosArray = abrirBaseDatos();
   // dd($json);
       foreach ($datosArray as $clave => $arrayUsuario) {
 
@@ -126,6 +122,42 @@ function validarLogin($email, $password){
           }
       }
   return $paso;
+}
+
+// Recordar usuario al iniciar sesion
+function inicioSesion($usuario, $dato){
+  $_SESSION["nombre"] = $usuario["nombre"];
+  $_SESSION["apellido"] = $usuario["apellido"];
+  $_SESSION["email"] = $usuario["email"];
+  if(isset($dato["recordarme"])){
+        setcookie("email",$dato["email"],time()+3600);
+        setcookie("password",$dato["password"],time()+3600);
+    }
+}
+
+
+function buscarPorEmail($email){
+  $baseDeDatos = abrirBaseDatos();
+  foreach ($baseDeDatos as $numero => $usuario) {
+
+    if ($email === $usuario["email"]) {
+      return $usuario;
+    }
+  }
+  return null;
+}
+
+//Abrir base de datos (JSON) y devuelve array
+function abrirBaseDatos(){
+    if(file_exists("usuarios.json")){
+        $baseDatosJson= file_get_contents("usuarios.json");
+        $baseDatosJson = explode(PHP_EOL,$baseDatosJson);
+        array_pop($baseDatosJson);
+        foreach ($baseDatosJson as  $usuarios) {
+            $arrayUsuarios[]= json_decode($usuarios,true);
+        }
+        return $arrayUsuarios;
+    }
 }
 
 /* base de datos de autos*/

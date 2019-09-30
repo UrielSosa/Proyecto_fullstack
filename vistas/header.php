@@ -6,8 +6,8 @@
 <header class="container-fluid u_bg-azul">
   <div class="navbar">
     <div class="u_logo ml-0 mr-0"> <a href="index.php"><img src="img/logo1.png"></a> </div>
-    <nav class="nav ml-0">
-      <ul class="nav d-flex col-3 col-md-12">
+    <nav class="nav ml-auto col-9">
+      <ul class="nav d-flex col-12">
         <div class="page">
           <div class="page__demo">
             <label class="field a-field a-field_a1 page__field">
