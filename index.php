@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- incluimos la barra de navegacion -->
-    <?php include_once "vistas/header.php";?>
+    <?php include_once "partials/header.php";?>
 
     <!-- Inicio del main -->
     <main class="baner-fluid u_pos-a">
@@ -45,11 +45,11 @@
         </div>
       </div>
       <!-- incluimos articulos -->
-      <?php include_once "vistas/articulos.php";?>
+      <?php include_once "partials/articulos.php";?>
 </main>
 
   <!-- footer -->
-    <?php include_once "vistas/footer.php";?>
+    <?php include_once "partials/footer.php";?>
   <!-- Fin del footer -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
